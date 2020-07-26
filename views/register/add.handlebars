@@ -1,0 +1,63 @@
+<section id="add-Student">
+    <article class="container">
+        <div class="row">
+            
+            <div class="col-md-9 right">
+            <div class="col-md-3 mb-3 mt-4">
+                <h3 class="h3 font-weight-bold text-justify">Add Student</h3>
+            </div>
+                <form action="/test/create" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        
+
+                        <div class="col-md-4">
+                            <label for="id">Student id</label>
+                            <input type="text" name="student_id" class="form-control my-2" required>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="student_name">Student name</label>
+                            <input type="text" name="student_name" class="form-control my-2" required>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="student_dob">Student Date of birth</label>
+                            <input type="date" name="student_dob" class="form-control my-2" required>
+                        </div>
+                       
+
+                        <div class="col-md-4  form-check">
+                            <label for="student_skills">Students Skills</label>
+                            <br />
+                            <span><input type="checkbox" class="form-check-input1" name="student_skills"
+                                    value="Java"><label>Java</label></span>
+                            <span><input type="checkbox" class="form-check-input1" name="student_skills"
+                                    value="nodejs"><label>nodejs</label></span>
+                            <span><input type="checkbox" class="form-check-input1" name="student_skills"
+                                    value="javascript"><label>javascript</label></span>
+                            <span><input type="checkbox" class="form-check-input1" name="student_skills"
+                                    value="expressjs"><label>expressjs</label></span>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="student_email">Student EMail</label>
+                            <input type="text" name="student_email" class="form-control my-2" required>
+                        </div>
+                         
+                         <div class="col-md-4 photo_block">
+                            <label for="student_photo">Student Photo</label>
+                            <input type="file" name="student_photo" class="form-control my-2 hide_file">
+                        </div>
+
+                        <div class="col-md-12">
+                            <button class="btn btn-success float-right">Register</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </article>
+
+</section>

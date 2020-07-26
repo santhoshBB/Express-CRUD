@@ -1,0 +1,22 @@
+<div class="card mt-2" style="width: 18rem;">
+
+  {{#if detail.student_photo}}
+  <img src="{{trimString detail.student_photo.0.path}}" class="card-img-top" alt="">
+  {{else}}
+  <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" class="card-img-top">
+  {{/if}}
+  <div class="card-body">
+    <p class="card-title"><u>DETAILS:</u></p>
+    ID:<p class="card-text">{{detail.student_id}}</p>
+    NAME:<p class="card-text">{{detail.student_name}}</p>
+   EMAIL:<p class="card-text">{{detail.student_email}}</p>
+    DOB:<p class="card-text">{{detail.student_dob}}</p>
+  SKILLS:<p class="card-text">{{detail.student_skills}}</p>
+    <a href="/test/edit/{{detail._id}}" class="btn btn-primary btn-sm"><i class="fas fa-edit " aria-hidden="true"></i></a>
+    
+    <form action="/test/delete/{{detail._id}}?_method=DELETE" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+       <button class="btn btn-sm btn-danger"><i class="fa fa-trash " aria-hidden="true"></i></button>
+    </form>
+  </div>
+</div>

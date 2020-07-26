@@ -1,0 +1,63 @@
+<section id="add-Student">
+    <article class="container">
+        <div class="row">
+            
+            <div class="col-md-9 right">
+            <div class="col-md-3 mb-3 mt-4">
+                <h3 class="h3 font-weight-bold text-justify">Add Student</h3>
+            </div>
+                <form action="/test/edit/{{edit._id}}?_method=PUT" method="post" enctype="multipart/form-data">
+                 <input type="hidden" name="_method" value="PUT">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="id">Student id</label>
+                            <input type="text" name="student_id" value="{{edit.student_id}}" class="form-control my-2" required>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="student_name">Student name</label>
+                            <input type="text" name="student_name" value="{{edit.student_name}}"  class="form-control my-2" required>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="student_dob">Student Date of birth</label>
+                            <input type="date" name="student_dob" value="{{edit.student_dob}}"  class="form-control my-2" required>
+                        </div>
+                       
+
+                        <div class="col-md-4  form-check">
+                            <label for="student_skills">Students Skills</label>
+                            <br />
+                            <span><input type="checkbox" class="form-check-input1" name="student_skills"
+                                    value="Java" {{#if edit.student_skills.[0]}}checked{{/if}}><label>Java</label></span>
+                            <span><input type="checkbox" class="form-check-input1" name="student_skills"
+                                    value="nodejs" {{#if edit.student_skills.[1]}} checked {{/if}}><label>nodejs</label></span>
+                            <span><input type="checkbox" class="form-check-input1" name="student_skills"
+                                    value="javascript" {{#if edit.student_skills.[2]}}checked{{/if}}><label>javascript</label></span>
+                            <span><input type="checkbox" class="form-check-input1" name="student_skills"
+                                    value="expressjs" {{#if edit.student_skills.[3]}} checked{{/if}}><label>expressjs</label></span>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="student_email">Student Email</label>
+                            <input type="text" name="student_email" value="{{edit.student_email}}" class="form-control my-2" required>
+                        </div>
+                         
+                         <div class="col-md-4 photo_block">
+                            <label for="student_photo">Student Photo</label>
+                            <input type="file" name="student_photo" class="form-control my-2 hide_file">
+                        </div>
+
+                        <div class="col-md-12">
+                            <button class="btn btn-success float-right">Update</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </article>
+
+</section>

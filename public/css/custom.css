@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #eeeeee;
+}
+.card{
+    margin: 0 auto;
+
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+.card-img-top{
+    height: 150px;
+}

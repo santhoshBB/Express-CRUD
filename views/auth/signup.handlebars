@@ -1,0 +1,28 @@
+<section class="container">
+    <article>
+        <div class="col-md-4 mx-auto card " style="margin-top:10px">
+            <h3 class="text-danger text-uppercase font-weight-bold my-4 p-2 text-center">Register</h3>
+            <form action="/auth/register" method="POST">
+                <div class="form-group text-dark">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" name="username" id="username" placeholder="enter username" required>
+                </div>
+                <div class="form-group text-dark">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="enter email" required>
+                </div>
+                <div class="form-group text-dark">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" name="password" id="password" placeholder="enter password" required>
+                </div>
+                <div class="form-group text-dark">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" class="form-control" name="password2" id="password2" placeholder="enter confirm password" required>
+                </div>
+                <div class="form-group">
+                        <button class="btn btn-danger btn-block">Sign-Up</button>
+                </div>
+            </form>
+        </div>
+    </article>
+</section>

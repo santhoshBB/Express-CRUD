@@ -1,0 +1,22 @@
+<section class="container">
+    <article>
+        <div class="col-md-4 mx-auto card " style="margin-top:10px">
+            <h3 class="text-danger text-uppercase font-weight-bold my-4 p-2 text-center">Login</h3>
+            <form action="/auth/login" method="POST">
+                
+                <div class="form-group text-dark">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="enter email" required>
+                </div>
+                <div class="form-group text-dark">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" name="password" id="password" placeholder="enter password" required>
+                </div>
+               
+                <div class="form-group">
+                        <button class="btn btn-danger btn-block">Login</button>
+                </div>
+            </form>
+        </div>
+    </article>
+</section>
